@@ -1,4 +1,4 @@
-# `security.md` - Responsible Security Disclosure README standard
+# `TEMPLATEs > security.md` - Responsible Security Disclosure README standard
 
 ## What should the `security.md` do?
 What is the main purpose of `security.md`?
@@ -74,9 +74,8 @@ Use Semantic Versioning to help other see at a glance if this document has been 
 ```
 ## Our security policy and Your responsibility
 ## "MY-PROJECT" Checklist: Security Recommendations
-## Credit
 ## Version
-## Authors
+
 ```
 
 ### `security.txt` Fields
