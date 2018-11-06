@@ -1,4 +1,4 @@
-# `security.md` - Responsible Security Disclosure README standard
+# `TEMPLATES > security.md` - Responsible Security Disclosure README standard
 
 ## Our security policy and Your responsibility
 - **POLICY**:
