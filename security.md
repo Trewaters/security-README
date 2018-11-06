@@ -1,4 +1,4 @@
-# `TEMPLATEs > security.md` - Responsible Security Disclosure README standard
+# `security.md` - Responsible Security Disclosure README standard
 
 ## What should the `security.md` do?
 What is the main purpose of `security.md`?
