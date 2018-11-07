@@ -38,7 +38,7 @@ We suggest you goto #2 if this happens.
 Through experience we have found it is best to goto #2 in this situation.
 
 **How?**
-Read our suggestions on [Reporting Security Issues](https://github.com/.../security.md#Reporting Security Issues).
+Read our suggestions on [Reporting Security Issues](https://github.com/Trewaters/security-README/blob/master/security.md#our-security-policy-and-your-responsibility).
 `SHOW HOW TO CODE EXAMPLES IF POSSIBLE`
 or goto #2
 
