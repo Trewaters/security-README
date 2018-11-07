@@ -15,15 +15,15 @@ This is a prosposed standard. If it is not used it should at least provide guide
 
 ## CREDIT
 - Development of the `security.txt ` draft takes place on Github at: https://github.com/securitytxt/security-txt
-- [Bishop Fox - Cybersecurity Style Guide - v1.1] (https://www.bishopfox.com/blog/2018/02/hello-world-introducing-the-bishop-fox-cybersecurity-style-guide/)
+- [Bishop Fox - Cybersecurity Style Guide - v1.1](https://www.bishopfox.com/blog/2018/02/hello-world-introducing-the-bishop-fox-cybersecurity-style-guide/)
 
 ## Contributing
 
-Solo project so far. Code and graphic design contributors are welcome and encouraged to help. Please read [CONTRIBUTING.md]https://github.com/Trewaters/security-README/CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to me. 
+Solo project so far. Code and graphic design contributors are welcome and encouraged to help. Please read [CONTRIBUTING.md](https://github.com/Trewaters/security-README/CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to me. 
 
 ## Versioning
 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/BART-CLI/project/tags).
+We use [SemVer](http://semver.org/) for versioning.
 
 ## Authors
 
@@ -33,7 +33,7 @@ See below the list of contributors who participated in this project.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+This project is licensed under the MIT License - see the [LICENSE](https://github.com/Trewaters/security-README/blob/master/security.md#license) in the `security.md` for details
 
 ## Acknowledgments
 
