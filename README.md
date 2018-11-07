@@ -19,7 +19,7 @@ This is a prosposed standard. If it is not used it should at least provide guide
 
 ## Contributing
 
-Solo project so far. Code and graphic design contributors are welcome and encouraged to help. Please read [CONTRIBUTING.md](https://github.com/Trewaters/security-README/CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to me. 
+Solo project so far. Code and graphic design contributors are welcome and encouraged to help. Please read [CONTRIBUTING.md](https://github.com/Trewaters/security-README/blob/master/CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to me. 
 
 ## Versioning
 
