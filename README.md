@@ -77,20 +77,24 @@ or goto #2
 - Definition: This directive allows you to link to a page where security researchers are recognized for their reports.  The page being linked to SHOULD list individuals or companies that disclosed security vulnerabilities and worked with you to remediate the issue.
 - Field { Acknowledgments: https://example.com/hall-of-fame.html }
 - Example security acknowledgment webpage:
- > We would like to thank the following researchers:
+```
+  We would like to thank the following researchers:
 
- > (2017-04-15) Frank Denis - Reflected cross-site scripting
- > (2017-01-02) Alice Quinn  - SQL injection
- > (2016-12-24) John Buchner - Stored cross-site scripting
- > (2016-06-10) Anna Richmond - A server configuration issue
+ (2017-04-15) Frank Denis - Reflected cross-site scripting
+ (2017-01-02) Alice Quinn  - SQL injection
+ (2016-12-24) John Buchner - Stored cross-site scripting
+ (2016-06-10) Anna Richmond - A server configuration issue
+```
 
 ### **Contact**
 - Definition (required): This directive allows you to provide an address that researchers SHOULD use for reporting security issues.  The value MAY be an email address, a phone number and/or a contact page with more information. If this directive indicates a web URL, then it MUST be begin with "https://". The value MUST follow the general syntax described in [RFC3986]. This means that "mailto" and "tel" URI schemes MUST be used when specifying email addresses and telephone numbers. The precedence SHOULD be in listed order.  The first field is the preferred method of contact.
 - Field { contact: mailto:trewaters@hotmail.com }
 - Example:
-> Contact: mailto:security@example.com
-> Contact: tel:+1-201-555-0123
-> Contact: https://example.com/security-contact.html
+```
+Contact: mailto:security@example.com
+Contact: tel:+1-201-555-0123
+Contact: https://example.com/security-contact.html
+```
 
 ### **Encryption**
 - Definition (recommended): This directive allows you to point to an encryption key that security researchers SHOULD use for encrypted communication.  You MUST NOT directly add your key to the field, instead the value of this field MUST be a URI pointing to a location where the key can be retrieved from.  If this directive indicates a web URL, then it MUST be begin with "https://". When it comes to verifying the authenticity of the key, it is always the security researcher's responsibility to make sure the key being specified is indeed one they trust.  Researchers MUST NOT assume that this key is used to generate the signature file
@@ -113,12 +117,10 @@ or goto #2
 ### **Policy**
 - Definition (recommended): This directive allows you to link to where your security policy and/ or disclosure policy is located.  This can help security researchers understand what you are looking for and how to report security vulnerabilities.  If this directive indicates a web URL, then it SHOULD begin with "https://".
 - Field { Policy: https://example.com/security.md }
-- Example:
 
 ### **Signature**
 - Definition (recommended): This directive allows you to specify a full URI (as per [RFC3986]) of an external signature file that can be used to check the authenticity of a "security.txt" file.  External signature files SHOULD be named "security.txt.sig" and SHOULD be placed under the /.well-known/ path ("/.well-known/security.txt.sig").  If this directive indicates a web URL, then it MUST be begin with "https://".  This field MUST NOT appear more than once.
 - Field { Signature: https://example.com/.well-known/security.txt.sig }
-- Example:
 
 ## CREDIT
 - Development of the `security.txt ` draft takes place on Github at: https://github.com/securitytxt/security-txt
