@@ -1,15 +1,12 @@
 # "security-README", proposed standard for open source repos
+This security ReadMe file, referred to as `SECURITY.md`, is modifying an idea proposed here ( https://github.com/securitytxt/security-txt ). The security ReadMe file creates a template with guidelines for open source projects. If a designer wishes, they could still create a "security text file", referred to as `security.txt`, and place it in the `/.well-known/` directory. Then the security policy (security.policy:"https://example.com/SECURITY.md") should point to this `SECURITY.md` file in an open source project's root directory. The security text file is a standard for applications deployed in the wild that want a machine readable security file. The security ReadMe file is a human readable file for contributors and maintainers that is easy to use.
 
-Modifying an idea that was proposed here ( https://github.com/securitytxt/security-txt ). Making a template and guidelines for the `security.md` ReadMe file. Basically designers should still create a "security text file" and place it in the `/.well-known/` directory but the Policy `.html` should point to this `security.md` file if it is an open source project. 
-
-## What should the `security.md` do?
-**What is the main purpose of `security.md`?**
-
-Improve reporting and fixing vulnerabilities when they are discovered. A security read me should be in all open source commits. Providing guidelines on how to get in touch with projects about security issues.
+## What is the  purpose of `SECURITY.md`?
+Improve reporting and fixing vulnerabilities when they are discovered. A security ReadMe file should be in all open source commits. It provides guidelines on how to contact projects about security issues, or bugs.
 
 ## Getting Started
-- "verbose", this `README.md` has all the definitions and descriptions of what I propose.
-- "tl;dr", `security.md` is a template which can be copied if you want to get up and running.
+- "verbose", this `./README.md` has all the definitions and descriptions of what I propose.
+- "tl;dr", `./SECURITY.md` is a template which can be copied if you want to get up and running.
 
 1. Create a `security.txt` file. See example below:
 ```
@@ -20,7 +17,7 @@ Improve reporting and fixing vulnerabilities when they are discovered. A securit
   Encryption: https://example.com/pgp-key.txt
   
   # Our security policy
-  Policy: https://example.com/security.md
+  Policy: https://example.com/SECURITY.md
   
   # Our security acknowledgments page
   Acknowledgments: https://example.com/hall-of-fame.html
@@ -28,33 +25,45 @@ Improve reporting and fixing vulnerabilities when they are discovered. A securit
   # Verify this security.txt file
   Signature: https://example.com/.well-known/security.txt.sig
 ```
-
-2. Create a `security.md` file. see example below:
+2. Create a `SECURITY.md` file. see example below:
 ```
 ## Our security policy and Your responsibility
+- **POLICY**:
+- **SECURITY DISCLOSURE**:
 ## "MY-PROJECT" Checklist: Security Recommendations
 ## Version
 
 ```
+3. Update your security policy of contact information changes. Be vigilant in reviewing and updating this policy as needed.
 
 ## Our security policy and Your responsibility
 - **POLICY**:
-
 *Our security policy is to avoid leaving the ecosystem worse than we found it. Meaning we are not planning to introduce vulnerabilities into the ecosystem.*
 
-This is the place for the security policy you wish uphold. This is also the place to put the "tl;dr" version of your Security Disclosure requirements.
+The "MY-PROJECT" team and community take all security bugs in "MY-PROJECT" seriously. Thank you for improving the security of "MY-PROJECT". We appreciate your efforts to disclose the issue responsibly, and will make every effort to acknowledge your contributions.
+
+Report security bugs by emailing the lead maintainer at [EMAIL ADDRESS] and include the word "SECURITY" in the subject line.
+
+The lead maintainer will acknowledge your email within a week (7 days), and will send a more detailed response up to 48 hours after that indicating the next steps in handling your report. After the initial reply to your report, the security team will endeavor to keep you informed of the progress towards a fix and an announcement. We may ask for additional information or guidance.
+
+- "MY-PROJECT" will confirm the problem and determine the affected versions.
+- "MY-PROJECT" will audit code to find any similar problems.
+- "MY-PROJECT" will prepare fixes for all releases still under maintenance. These fixes will be released as fast as possible.
+
+Report security bugs in third-party modules to the person or team maintaining the module.
 
 - **SECURITY DISCLOSURE**:
-
 *Your responsibility is to report vulnerabilities to us using the guidelines outlined below.*
 
-Discuss in tl;dr ( or ELI5 ) how someone could/should disclose a vulnerability to "MY-PROJECT". Then expand on this with "How To Disclose a vulnerability in detail". Please give detailed steps on how to disclose the vulnerability. Keep these OWASP guidelines in mind ( https://www.owasp.org/index.php/Vulnerability_Disclosure_Cheat_Sheet ) when creating your disclosure policy. Below are some recommendations for security disclosures:
-- "MY-PROJECT" security contacts { contact: mailto:trewaters@hotmail.com }
-- Communication expectations: How much time it could take "MY-PROJECT" to respond? What type of response to expect?
-- Disclosure format: When disclosing vulnerabilities please 
-  1. include scope of vulnerability, 
-  2. document steps to identify and 
-  3. how to exploit vulnerability
+Please give detailed steps on how to disclose the vulnerability. Keep these OWASP guidelines in mind ( https://www.owasp.org/index.php/Vulnerability_Disclosure_Cheat_Sheet ) when creating your disclosure policy. 
+
+Below are some recommendations for security disclosures:
+- "MY-PROJECT" security contact { contact: mailto:[EMAIL ADDRESS] }
+- When disclosing vulnerabilities please do the following:
+  1. Your name and affiliation (if any).
+  2. Include scope of vulnerability. Let us know who could use this exploit.
+  3. Document steps to identify the vulnerability. It is important that we can reproduce your findings. 
+  4. Show how to exploit vulnerability, give us an attack scenario.
 
 ### "MY-PROJECT" Checklist: Security Recommendations
 Follow these steps to improve security when using "MY-PROJECT".
@@ -68,7 +77,7 @@ We suggest you goto #2 if this happens.
 Through experience we have found it is best to goto #2 in this situation.
 
 **How?**
-Read our suggestions on [Reporting Security Issues](https://github.com/Trewaters/security-README/blob/master/security.md#our-security-policy-and-your-responsibility).
+Read our suggestions on [Reporting Security Issues](https://github.com/Trewaters/security-README/blob/master/SECURITY.md#our-security-policy-and-your-responsibility).
 `SHOW HOW TO CODE EXAMPLES IF POSSIBLE`
 or goto #2
 
@@ -116,15 +125,18 @@ Contact: https://example.com/security-contact.html
 
 ### **Policy**
 - Definition (recommended): This directive allows you to link to where your security policy and/ or disclosure policy is located.  This can help security researchers understand what you are looking for and how to report security vulnerabilities.  If this directive indicates a web URL, then it SHOULD begin with "https://".
-- Field { Policy: https://example.com/security.md }
+- Field { Policy: https://example.com/SECURITY.md }
 
 ### **Signature**
 - Definition (recommended): This directive allows you to specify a full URI (as per [RFC3986]) of an external signature file that can be used to check the authenticity of a "security.txt" file.  External signature files SHOULD be named "security.txt.sig" and SHOULD be placed under the /.well-known/ path ("/.well-known/security.txt.sig").  If this directive indicates a web URL, then it MUST be begin with "https://".  This field MUST NOT appear more than once.
 - Field { Signature: https://example.com/.well-known/security.txt.sig }
 
 ## CREDIT
-- Development of the `security.txt ` draft takes place on Github at: https://github.com/securitytxt/security-txt
-- [Bishop Fox - Cybersecurity Style Guide - v1.1](https://www.bishopfox.com/blog/2018/02/hello-world-introducing-the-bishop-fox-cybersecurity-style-guide/)
+- Development of the companion `security.txt ` draft takes place on Github at: https://github.com/securitytxt/security-txt
+- Used this style guide [Bishop Fox - Cybersecurity Style Guide - v1.1](https://www.bishopfox.com/blog/2018/02/hello-world-introducing-the-bishop-fox-cybersecurity-style-guide/)
+- [JS Standard Style - SECURITY.md](https://github.com/standard/standard/blob/master/SECURITY.md)
+- [electron - SECURITY.md](https://github.com/electron/electron/blob/master/SECURITY.md)
+- [tensorflow - SECURITY.md](https://github.com/tensorflow/tensorflow/blob/master/SECURITY.md)
 
 ## Contributing
 Solo project so far. Code and graphic design contributors are welcome and encouraged to help. Please read [CONTRIBUTING.md](https://github.com/Trewaters/security-README/blob/master/CONTRIBUTING.md) for details on our code of conduct, and the process for submitting pull requests to me. 
@@ -132,13 +144,12 @@ Solo project so far. Code and graphic design contributors are welcome and encour
 ## Versioning
 We use [SemVer](http://semver.org/) for versioning.
 
-**version 0.1.1**
-
+**version 1.0.0**
 Use Semantic Versioning to help other see at a glance if this document has been updated and what was the scope of the udpate.
 
-- Major version incremented when contact information changes in the `security.md` file or in the `security.txt` file that refers to this file. Or a required field in the `security.txt` has changed in a non backwards compatible manner.
-- Minor update is a backward compatible change has been made to the aforementioned files.
-- Patch update is when a minor typo is fixed but no significant change has been made.
+- *Major version* incremented when contact information changes in the `SECURITY.md` file or in the `security.txt` file that refers to this file. Or a required field in the `security.txt` has changed in a non backwards compatible manner.
+- *Minor update* is a backward compatible change has been made to the aforementioned files. Usually a field was added or changed to recommended.
+- *Patch update* is when a minor typo is fixed but no significant change has been made.
 
 ## Authors
 - **Tre' Grisby** - _Initial work_ - [@trewaters on github](https://github.com/trewaters)
@@ -160,5 +171,5 @@ Creative Commons Attribution-ShareAlike 4.0 International
 - A mailing list for `security.txt` is available for discussion at: https://www.freelists.org/list/securitytxt
 
 **Timeline:** 
-- This all started on November 1, 2018 when I gave a talk at SFNode titled "Node.js Security best practices". I asked everyone to start using a `security.md` file in their open source projects. Then I realized such a specification didn't actually exist. So I started one by modifying the current `security.txt` specs, and here we are.
+- This all started on November 1, 2018 when I gave a talk at SFNode titled "Node.js Security best practices". I asked everyone to start using a `SECURITY.md` file in their open source projects. Then I realized such a specification didn't actually exist. So I started one by modifying the current `security.txt` specs, and here we are.
 - On November 4th this was committed to the Node.js foundation [see commit here...](https://github.com/nodejs/node/commit/472a3d890bcd1c6799658d72bb813626a16d0adc)
