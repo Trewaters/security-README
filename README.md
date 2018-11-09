@@ -134,6 +134,7 @@ Contact: https://example.com/security-contact.html
 ## CREDIT
 - Development of the companion `security.txt ` draft takes place on Github at: https://github.com/securitytxt/security-txt
 - Used this style guide [Bishop Fox - Cybersecurity Style Guide - v1.1](https://www.bishopfox.com/blog/2018/02/hello-world-introducing-the-bishop-fox-cybersecurity-style-guide/)
+- [Node.js - SECURITY.md](https://github.com/nodejs/node/blob/master/SECURITY.md)
 - [JS Standard Style - SECURITY.md](https://github.com/standard/standard/blob/master/SECURITY.md)
 - [electron - SECURITY.md](https://github.com/electron/electron/blob/master/SECURITY.md)
 - [tensorflow - SECURITY.md](https://github.com/tensorflow/tensorflow/blob/master/SECURITY.md)
@@ -147,7 +148,10 @@ We use [SemVer](http://semver.org/) for versioning.
 **version 1.0.0**
 Use Semantic Versioning to help other see at a glance if this document has been updated and what was the scope of the udpate.
 
-- *Major version* incremented when contact information changes in the `SECURITY.md` file or in the `security.txt` file that refers to this file. Or a required field in the `security.txt` has changed in a non backwards compatible manner.
+- *Major version* incremented when...
+  1. Contact information changes in the `SECURITY.md` file or in the `security.txt` file that refers to this file. 
+  2. A required field in the `security.txt` has changed in a non backwards compatible manner. 
+  3. Updating or changing the Encryption key or protocol.
 - *Minor update* is a backward compatible change has been made to the aforementioned files. Usually a field was added or changed to recommended.
 - *Patch update* is when a minor typo is fixed but no significant change has been made.
 
